@@ -3,7 +3,7 @@ import Image from "next/image"
 // import Logo from "../assets/logo.png";
 import Link from "next/link";
 
-export default function Login()  {
+export default function SignIn()  {
   return (
   <div className='flex justify-center items-start pt-5' >
       <div className="flex min-h-full flex-col bg-gray-900 justify-center px-6 py-12 lg:px-8 rounded-md ring ring-yellow-400">

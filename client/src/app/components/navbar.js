@@ -1,5 +1,6 @@
 "use client"
 import Link from 'next/link'
+import Logo from './logo'
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon, UserIcon } from '@heroicons/react/24/outline'
@@ -36,14 +37,7 @@ export default function Navbar(){
                     </Disclosure.Button>
                   </div>
                   <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                    <div className="flex flex-shrink-0 items-center">
-                      {/* <img
-                        className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                        alt="Your Company"
-                      /> */}
-                      <Link className='text-yellow-400 rounded-md text-md hover:bg-blue-800  bg-blue-700 p-1 font-bold uppercase'  href={'/'} >Soccer-bet</Link>
-                    </div>
+                    <Logo/>
                     <div className="hidden sm:ml-6 sm:block">
                       <div className="flex space-x-2">
                         {navigation.map((item) => (
@@ -67,11 +61,11 @@ export default function Navbar(){
                       <Link
                         href={'/register'}
                         className="text-white-800 bg-gray-800 hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm font-bold">
-                              Registrar
+                              Register
                       </Link>
 
                       <Link
-                        href={'/registrar'}
+                        href={'/login'}
                         className="text-white-800 bg-gray-800 hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm font-bold">
                               Login
                       </Link>
@@ -88,7 +82,7 @@ export default function Navbar(){
 
                         </Menu.Button>
                       </div>
-                      {/* <Transition
+                      <Transition
                         as={Fragment}
                         enter="transition ease-out duration-100"
                         enterFrom="transform opacity-0 scale-95"
@@ -129,7 +123,7 @@ export default function Navbar(){
                             )}
                           </Menu.Item>
                         </Menu.Items>
-                      </Transition> */}
+                      </Transition>
                     </Menu>
                   </div>
                 </div>
