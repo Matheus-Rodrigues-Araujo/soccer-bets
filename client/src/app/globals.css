@@ -26,3 +26,14 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
+.content-btn:hover{
+  outline: 2px solid #FACC15;
+}
+.content-btn:hover p{
+  color: #FACC15;
+}
