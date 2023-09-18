@@ -2,17 +2,17 @@
 import Image from "next/image"
 // import Logo from "../assets/logo.png";
 import Link from "next/link";
+import Logo from "../logo";
 
 export default function SignUp()  {
   return (
-    <div className='flex justify-center items-start pt-5' >
-    <div className="flex min-h-full flex-col bg-gray-900 justify-center px-6 py-12 lg:px-8 rounded-md ring ring-yellow-400">
-    <div className="sm:mx-auto sm:w-full sm:max-w-sm my-3">
-      <h1 className="text-center text-yellow-400 bg-blue-900 p-3 rounded font-bold text-md" >SoccerBets</h1>
-    </div>
-
-    <div className="mt-2 sm:mx-auto sm:w-full sm:max-w ">
-      <form className="space-y-6" action="#" method="POST">
+    <div className='flex justify-center items-start pt-5 bg-yellow-500 ' style={{minHeight: '100vh'}} >
+    <div className="mt-5 flex min-h-full flex-col bg-gray-900 justify-center md:w-[40vh]  px-6 py-12 lg:px-8 rounded-md ring ring-yellow-400">
+    <div className="flex justify-center" >
+        <Logo/>
+      </div>
+    <div className="mt-2 sm:mx-auto sm:w-full sm:max-w-sm ">
+      <form className="space-y-6 p-5" action="#" method="POST">
       
       <div>
           <label className="block text-sm font-medium leading-6 text-white-900">Username</label>
@@ -80,7 +80,7 @@ export default function SignUp()  {
 
       <p className="mt-5 text-center text-md text-white-500">
         Have an account?
-        <Link href="/" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500 underline" style={{color: '#EFD370'}} >Sign In</Link>
+        <Link href="/login" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500 underline" style={{color: '#EFD370'}} >Sign In</Link>
       </p>
     </div>
   </div>

@@ -23,8 +23,8 @@ export default function Home() {
           Are you a die-hard football enthusiast seeking an all-in-one platform for the latest updates, insightful analysis, and interactive gaming experiences? Look no further than SoccerBets – your go-to app for all things football!
           </p>
 
-          <Link href="/login" className="text-2xl bg-green-700 hover:bg-green-600 p-5 w-100 rounded-md ">
-            Learn more
+          <Link href="/login" className="uppercase text-2xl bg-green-700 hover:bg-green-600 p-5 w-100 rounded-md ">
+            Start now!
           </Link>
 
         </div>
@@ -33,7 +33,7 @@ export default function Home() {
 
       <section className="relative information bg-yellow-500 flex justify-center items-start h-[50vh]" style={{backgroundColor: 'rgb(17 23 36)'}} >
             <div className='flex flex-col gap-5' >
-              <h3 className="text-yellow-400 text-2xl text-center mb-8" >Explore our content</h3>
+              <h3 className="text-yellow-400 text-5xl font-bold text-center" >Explore our content</h3>
               <p className="text-yellow-400 text-2xl text-center mb-8" >Click and know about our services</p>
               <div className='grid grid-cols-3 gap-4' >
                 <a href='#updates' className='content-btn bg-yellow-400 p-8 rounded-md text-lg cursor-pointer hover:bg-gray-800'>
